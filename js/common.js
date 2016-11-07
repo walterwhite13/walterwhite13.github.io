@@ -1,20 +1,13 @@
 $(function() {
 
-var owl = $('.owl-carousel')
-var owl2 = $('.owl-carousel2')
+var owl = $('.owl-carousel');
 
 owl.owlCarousel({
-	items: 1,
-	loop:true,
-
+    items: 1,
+    loop:true,
 });
 
-owl2.owlCarousel({
-	items: 1,
-	loop:true,
-	dots: false,
 
-});
 
 $('.next').click(function() {
     owl.trigger('next.owl.carousel');
@@ -26,14 +19,26 @@ $('.prev').click(function() {
     owl.trigger('prev.owl.carousel', [300]);
 })
 
-$('.next').click(function() {
-    owl2.trigger('next.owl.carousel');
-})
-// Go to the previous item
-$('.prev').click(function() {
-    // With optional speed parameter
-    // Parameters has to be in square bracket '[]'
-    owl2.trigger('prev.owl.carousel', [300]);
-})
+});
+
+$(document).ready(function(){
+  $('.slick1').slick({
+    infinite: true,
+    slidesToShow: 6,
+    slidesToScroll: 1,
+    dots: false,
+    prevArrow: '<img class="asd1" src="./img/arrow-prev.png">',
+    nextArrow: '<img class="asd2" src="./img/arrow-next.png">'
+
+  });
+
+});
+
+$(document).ready(function(){
+  $('.slick2').slick({
+    infinite: true,
+    prevArrow: '<img class="asd1" src="./img/arrow-prev.png">',
+    nextArrow: '<img class="asd2" src="./img/arrow-next.png">'
+  });
 
 });
