@@ -27,8 +27,8 @@ $(document).ready(function(){
     slidesToShow: 6,
     slidesToScroll: 1,
     dots: false,
-    prevArrow: '<img class="asd1" src="./img/arrow-prev.png">',
-    nextArrow: '<img class="asd2" src="./img/arrow-next.png">'
+    prevArrow: '<img class="asd1" src="img/arrow-prev.png">',
+    nextArrow: '<img class="asd2" src="img/arrow-next.png">'
 
   });
 
@@ -37,8 +37,8 @@ $(document).ready(function(){
 $(document).ready(function(){
   $('.slick2').slick({
     infinite: true,
-    prevArrow: '<img class="asd1" src="./img/arrow-prev.png">',
-    nextArrow: '<img class="asd2" src="./img/arrow-next.png">'
+    prevArrow: '<img class="asd1" src="img/arrow-prev.png">',
+    nextArrow: '<img class="asd2" src="img/arrow-next.png">'
   });
 
 });
