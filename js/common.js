@@ -7,8 +7,6 @@ owl.owlCarousel({
     loop:true,
 });
 
-
-
 $('.next').click(function() {
     owl.trigger('next.owl.carousel');
 })
@@ -42,3 +40,33 @@ $(document).ready(function(){
   });
 
 });
+
+$(".toggle-mnu").click(function() {
+  $(this).toggleClass("on");
+  $(".topline").slideToggle();
+  return false;
+});
+
+$(document).ready(function() {
+  $('#menu-trigger').click(function() {
+    $('nav a.menu-item').slideToggle(300);
+  });//end slide toggle
+  
+  $(window).resize(function() {   
+    if (  $(window).width() > 890 ) {     
+      $('nav a.menu-item').removeAttr('style');
+     }
+  });//end resize
+});//end ready
+
+$(document).ready(function() {
+  $('.catalog-head').click(function() {
+    $('.catalog').slideToggle(300);
+  });//end slide toggle
+  
+  $(window).resize(function() {   
+    if (  $(window).width() > 890 ) {     
+      $('.catalog').removeAttr('style');
+     }
+  });//end resize
+});//end ready
