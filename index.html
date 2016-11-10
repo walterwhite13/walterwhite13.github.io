@@ -17,7 +17,7 @@
 	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
 	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
 	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
-	<link rel="stylesheet" type="text/css" href="css/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="libs/slick/slick.css"/>
 
 	<!-- Template Basic Images End -->
 
@@ -305,18 +305,30 @@
 <section>
 	<div class="container">
 		<div class="row">
-			<div class="col-lg-3 col-md-6">
+			<div class="col-lg-3 col-md-12">
 				<div class="cartrige">
 					<h4>Подобрать картридж</h4>
-					<div class="dropdown1">
-						Производитель
-					</div>
-					<div class="dropdown1">
-						Тип устройства
-					</div>
-					<div class="dropdown1">
-						Модель
-					</div>
+					<select class="dropdown1">
+						<option>Производитель</option>
+						<option>Пункт 1</option>
+						<option>Пункт 2</option>
+						<option>Пункт 3</option> 
+						<option>Пункт 4</option> 
+					</select>
+					<select class="dropdown1" placeholder="asd">
+						<option>Тип устройства</option>
+						<option>Пункт 1</option>
+						<option>Пункт 2</option>
+						<option>Пункт 3</option> 
+						<option>Пункт 4</option> 
+					</select>
+					<select class="dropdown1">
+						<option>Модель</option>
+						<option>Пункт 1</option>
+						<option>Пункт 2</option>
+						<option>Пункт 3</option> 
+						<option>Пункт 4</option> 
+					</select>
 					<a href="#" class="choise">Подобрать</a>
 				</div>
 			</div>
@@ -324,7 +336,7 @@
 			<div class="col-lg-9 col-md-12">
 				<div class="popular">
 					<h4 class="pop">Популярные разделы</h4>
-					<div class="col-lg-4 col-md-4 col-sm-4">
+					<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
 					<div class="popular-item no-border">
 						<div class="pop-img-wrap">
 							<img src="img/pop-1.jpg" alt="" class="pop-img">
@@ -335,7 +347,7 @@
 						<a href="#" class="pop-link">В раздел</a>
 					</div>
 					</div>
-					<div class="col-lg-4 col-md-4 col-sm-4">
+					<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
 					<div class="popular-item">
 						<div class="pop-img-wrap">
 							<img src="img/pop-2.jpg" alt="" class="pop-img">
@@ -346,7 +358,7 @@
 						<a href="#" class="pop-link">В раздел</a>
 						</div>
 					</div>
-					<div class="col-lg-4 col-md-4 col-sm-4">
+					<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
 						<div class="popular-item">
 							<div class="pop-img-wrap">
 							<img src="img/pop-3.jpg" alt="" class="pop-img">
@@ -366,14 +378,15 @@
 <section class="promo">
 	<div class="container">
 		<div class="row">
-			<div class="col-lg-6 col-md-8">
+			<div class="col-lg-6 col-md-6 col-sm-12">
 				<div class="promo1">
+				<img src="img/banner1.png" alt="">
 					<a href="#" class="buy-now"><i class="fa fa-cart-plus" aria-hidden="true"></i> Купить сейчас</a>
 				</div>
 			</div>
-			<div class="col-lg-6 col-md-8">
-				<div class="promo2">
-					<a href="#" class="promo2-link"></a>
+			<div class="col-lg-6 col-md-6 col-sm-12">
+				<div class="promo1">
+					<a href="#" class="promo2-link"><img src="img/banner2.png" alt=""></a>
 				</div>
 			</div>
 		</div>
@@ -382,7 +395,7 @@
 
 
 
-<section class="about">
+<section class="about hidden-xs">
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -457,7 +470,6 @@
 					<div class="svg-wrap"><img src="img/facebook.svg" alt="" class="partners-logo"></div>
 					<div class="svg-wrap"><img src="img/flickr.svg" alt="" class="partners-logo"></div>
 					<div class="svg-wrap"><img src="img/google-plus.svg" alt="" class="partners-logo"></div>
-					<div class="svg-wrap"><img src="img/instagram.svg" alt="" class="partners-logo"></div>
 					<div class="svg-wrap"><img src="img/lastfm.svg" alt="" class="partners-logo"></div>
 					<div class="svg-wrap"><img src="img/linkedin.svg" alt="" class="partners-logo"></div>
 					<div class="svg-wrap"><img src="img/soundcloud.svg" alt="" class="partners-logo"></div>
@@ -466,27 +478,48 @@
 					<div class="svg-wrap"><img src="img/twitter.svg" alt="" class="partners-logo"></div>
 					<div class="svg-wrap"><img src="img/vk.svg" alt="" class="partners-logo"></div>
 				</div>
-			</div>
+
+				<div class="partners-small hidden-lg hidden-md hidden-sm">
+					<div class="wrap-img-flex">
+						<img src="img/badoo.svg" alt="" class="partners-logo">
+						<img src="img/pinterest.svg" alt="" class="partners-logo">
+						<img src="img/behance.svg" alt="" class="partners-logo">
+						<img src="img/deviantart.svg" alt="" class="partners-logo">
+					</div>
+					<div class="wrap-img-flex">
+						<img src="img/dribbble.svg" alt="" class="partners-logo">
+						<img src="img/facebook.svg" alt="" class="partners-logo">
+						<img src="img/flickr.svg" alt="" class="partners-logo">
+						<img src="img/google-plus.svg" alt="" class="partners-logo">
+					</div>
+					<div class="wrap-img-flex">
+						<img src="img/lastfm.svg" alt="" class="partners-logo">
+						<img src="img/linkedin.svg" alt="" class="partners-logo">
+						<img src="img/soundcloud.svg" alt="" class="partners-logo">
+						<img src="img/swarm.svg" alt="" class="partners-logo">
+					</div>
+					<div class="wrap-img-flex">
+						<img src="img/tumblr.svg" alt="" class="partners-logo">
+						<img src="img/twitter.svg" alt="" class="partners-logo">
+						<img src="img/vk.svg" alt="" class="partners-logo">
+						<img src="img/instagram.svg" alt="" class="partners-logo">
+					</div>
+				</div>
 		</div>
 	</div>
 </section>
 
+<h4>Рекомендуем</h4><h4>Последние статьи</h4>
 <section class="rec-wrap">
 	<div class="container">
 		<div class="row">
-			<div class="col-lg-3">
-				<h4>Рекомендуем</h4>
-				<a href="#" class="banner3"><img src="img/banner3.png" alt=""></a>
+			<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+				<a href="#" ><img class="banner3" src="img/banner3.png" alt=""></a>
 			</div>
 
-			<div class="col-lg-9">
-				<h4>Последние статьи</h4>
-
-				<div class="row">
-					<div class="col-lg-4">
+					<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
 						<div class="art">
 							<div class="art-img" style="background-image: url(img/article1.png)"">
-								
 							</div>
 							<span>Интересная статья о принтере EPSON ColorJet 250</span>
 							<p>Департамент маркетинга и продаж, 
@@ -497,10 +530,10 @@
 							<a href="#" class="art-more">Подробнее</a>
 						</div>
 					</div>
-					<div class="col-lg-4">
+<div class="clearfix hidden-lg hidden-md"></div>
+					<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
 						<div class="art">
 							<div class="art-img" style="background-image: url(img/article2.png)"">
-								
 							</div>
 							<span>Интересная статья о принтере EPSON ColorJet 250</span>
 							<p>Департамент маркетинга и продаж, 
@@ -511,7 +544,8 @@
 							<a href="#" class="art-more">Подробнее</a>
 						</div>
 					</div>
-					<div class="col-lg-4">
+
+					<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
 						<div class="art">
 							<div class="art-img" style="background-image: url(img/article3.png)"">
 								
@@ -525,7 +559,6 @@
 							<a href="#" class="art-more">Подробнее</a>
 						</div>
 					</div>
-				</div>
 			</div>
 		</div>
 	</div>

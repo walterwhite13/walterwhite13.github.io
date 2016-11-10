@@ -22,8 +22,8 @@ $('.prev').click(function() {
 $(document).ready(function(){
   $('.slick1').slick({
     infinite: true,
-    slidesToShow: 6,
-    slidesToScroll: 1,
+    slidesToShow: 5,
+    slidesToScroll: 5,
     dots: false,
     prevArrow: '<img class="asd1" src="img/arrow-prev.png">',
     nextArrow: '<img class="asd2" src="img/arrow-next.png">'
